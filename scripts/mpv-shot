@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Format
+# ./mpv-shot video_file number_of_samples
+
+mkdir -p image
+
+# video file
+video=$1
+# number of samples (if empty = 100)
+numsamples=$2
+numsamples=${numsamples:-100}
+
+# video duration (in sec)
+duration=`ffprobe -i ${video} -show_format -v quiet | sed -n 's/duration=//p'`
+
+# time step (integer)
+timestep=`echo "scale=0; ${duration} / ${numsamples}" | bc`
+
+# integer part of duration
+duration=`echo "scale=0; ${duration} / 1" | bc`
+
+for time in `seq -w 0 ${timestep} ${duration}`
+do
+    mpv $video --quiet --aid=no --sid=no --frames=1 --start=${time} --o=image/${video}-${time}.jpg
+done
+

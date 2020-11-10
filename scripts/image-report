@@ -1,0 +1,15 @@
+#!/bin/bash
+
+rm -f report.md
+
+ls -1 image > report_tmp.md
+
+# Делаем заготовку для подписи рисунка в виде точки
+
+while read line
+do
+    ref=`echo $line | sed -e "s:.*\.mkv-\(.*\)\.jpg:\1:g"`
+    echo -e "\n\n![.](image/$line){ #fig:$ref width=70% }\n" >> report.md
+done < report_tmp.md
+
+rm -f report_tmp.md
