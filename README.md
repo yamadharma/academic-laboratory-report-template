@@ -1,1 +1,1 @@
-# Шаблон отчёта по лабораторной работе
+# Report template on laboratory work
