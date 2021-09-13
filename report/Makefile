@@ -8,17 +8,19 @@ FORMAT_OPTIONS =
 
 # FILTERS += -F pandoc-citeproc
 FILTERS += -F pandoc-crossref
-PDF_ENGINE += --pdf-engine=lualatex
+PDF_ENGINE += --pdf-engine=xelatex
 PDF_OPTIONS += --number-sections
 
 %.docx: %.md
-	-pandoc "$<" $(FILTERS) -o "$@"
+	-@pandoc "$<" $(FILTERS) -o "$@"
 
 %.pdf: %.md
-	-pandoc "$<" $(FILTERS) $(PDF_ENGINE) $(PDF_OPTIONS) $(FORMAT_OPTIONS) -o "$@"
+	-@pandoc "$<" $(FILTERS) $(PDF_ENGINE) $(PDF_OPTIONS) $(FORMAT_OPTIONS) -o "$@"
 
 all: $(FILES)
 	@echo $(FILES)
 
 clean:
 	-rm $(FILES) *~
+
+cleanall: clean
