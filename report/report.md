@@ -1,18 +1,18 @@
 ---
-# Front matter
+## Front matter
 title: "Шаблон отчёта по лабораторной работе"
 subtitle: "Простейший вариант"
 author: "Дмитрий Сергеевич Кулябов"
 
-# Generic otions
+## Generic otions
 lang: ru-RU
 toc-title: "Содержание"
 
-# Bibliography
+## Bibliography
 bibliography: bib/cite.bib
 csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
 
-# Pdf output format
+## Pdf output format
 toc: true # Table of contents
 toc-depth: 2
 lof: true # List of figures
@@ -21,7 +21,7 @@ fontsize: 12pt
 linestretch: 1.5
 papersize: a4
 documentclass: scrreprt
-## I18n
+## I18n polyglossia
 polyglossia-lang:
   name: russian
   options:
@@ -29,7 +29,10 @@ polyglossia-lang:
 	- babelshorthands=true
 polyglossia-otherlangs:
   name: english
-### Fonts
+## I18n babel
+babel-lang: russian
+babel-otherlangs: english
+## Fonts
 mainfont: PT Serif
 romanfont: PT Serif
 sansfont: PT Sans
