@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/yamadharma/academic-laboratory-report-template/compare/v1.0.1...v1.0.2) (2023-02-07)
+
+
+### Features
+
+* **filters:** add support pandoc-xnos ([0cd4f9b](https://github.com/yamadharma/academic-laboratory-report-template/commit/0cd4f9b0c3602091c20bb2e3a7f4d3e6fc37b3fd))
+
+
+
 ## [1.0.1](https://github.com/yamadharma/academic-laboratory-report-template/compare/v1.0.0...v1.0.1) (2022-04-16)
 
 
