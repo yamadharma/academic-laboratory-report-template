@@ -1,3 +1,12 @@
+## [1.0.4](https://github.com/yamadharma/academic-laboratory-report-template/compare/v1.0.3...v1.0.4) (2024-02-08)
+
+
+### Features
+
+* **make:** switch to pandoc-crossref ([d981950](https://github.com/yamadharma/academic-laboratory-report-template/commit/d981950aca35348a7489076b3f1a61f4b23be4d3))
+
+
+
 ## [1.0.3](https://github.com/yamadharma/academic-laboratory-report-template/compare/v1.0.2...v1.0.3) (2023-11-05)
 
 
