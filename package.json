@@ -1,6 +1,6 @@
 {
     "name": "academic-laboratory-report-template",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Report template",
     "main": "index.js",
     "repository": "git@github.com:yamadharma/academic-laboratory-report-template.git",
