@@ -1,3 +1,17 @@
+## [1.0.5](https://github.com/yamadharma/academic-laboratory-report-template/compare/v1.0.4...v1.0.5) (2024-08-31)
+
+
+### Bug Fixes
+
+* **make:** add biblatex for future ([f18bb2f](https://github.com/yamadharma/academic-laboratory-report-template/commit/f18bb2f6fc80f39f40abd20d276ce7038c7124df))
+
+
+### Features
+
+* **report:** switch to IBM Plex font ([cedf4d0](https://github.com/yamadharma/academic-laboratory-report-template/commit/cedf4d066120151c776c3a54151d84e06387f4b8))
+
+
+
 ## [1.0.4](https://github.com/yamadharma/academic-laboratory-report-template/compare/v1.0.3...v1.0.4) (2024-02-08)
 
 
