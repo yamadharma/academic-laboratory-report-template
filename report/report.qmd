@@ -1,8 +1,21 @@
 ---
-## Front matter
+## Author
+author:
+  name: Дмитрий Сергеевич Кулябов
+  degrees: DSc
+  orcid: 0000-0002-0877-7063
+  email: kulyabov-ds@rudn.ru
+  affiliation:
+    - name: Российский университет дружбы народов
+      country: Российская Федерация
+      postal-code: 117198
+      city: Москва
+      address: ул. Миклухо-Маклая, д. 6
+      
+## Ttile      
 title: "Шаблон отчёта по лабораторной работе"
 subtitle: "Простейший вариант"
-author: "Дмитрий Сергеевич Кулябов"
+license: "CC BY"
 
 ## Generic otions
 lang: ru-RU
@@ -25,8 +38,8 @@ documentclass: scrreprt
 polyglossia-lang:
   name: russian
   options:
-	- spelling=modern
-	- babelshorthands=true
+    - spelling=modern
+    - babelshorthands=true
 polyglossia-otherlangs:
   name: english
 ## I18n babel
@@ -42,7 +55,7 @@ mainfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
 romanfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
 sansfontoptions: Ligatures=Common,Ligatures=TeX,Scale=MatchLowercase,Scale=0.94
 monofontoptions: Scale=MatchLowercase,Scale=0.94,FakeStretch=0.9
-mathfontoptions:
+# mathfontoptions:
 ## Biblatex
 biblatex: true
 biblio-style: "gost-numeric"
@@ -54,12 +67,12 @@ biblatexoptions:
   - autolang=other*
   - citestyle=gost-numeric
 ## Pandoc-crossref LaTeX customization
-figureTitle: "Рис."
-tableTitle: "Таблица"
-listingTitle: "Листинг"
-lofTitle: "Список иллюстраций"
-lotTitle: "Список таблиц"
-lolTitle: "Листинги"
+# figureTitle: "Рис."
+# tableTitle: "Таблица"
+# listingTitle: "Листинг"
+# lofTitle: "Список иллюстраций"
+# lotTitle: "Список таблиц"
+# lolTitle: "Листинги"
 ## Misc options
 indent: true
 header-includes:
@@ -88,9 +101,9 @@ header-includes:
 
 Здесь описываются теоретические аспекты, связанные с выполнением работы.
 
-Например, в табл. [-@tbl:std-dir] приведено краткое описание стандартных каталогов Unix.
+Например, в табл. [-@tbl-std-dir] приведено краткое описание стандартных каталогов Unix.
 
-: Описание некоторых каталогов файловой системы GNU Linux {#tbl:std-dir}
+: Описание некоторых каталогов файловой системы GNU Linux {#tbl-std-dir}
 
 | Имя каталога | Описание каталога                                                                                                          |
 |--------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -107,9 +120,9 @@ header-includes:
 
 # Выполнение лабораторной работы
 
-Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. [-@fig:001]).
+Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. [-@fig-001]).
 
-![Название рисунка](image/placeimg_800_600_tech.jpg){#fig:001 width=70%}
+![Название рисунка](image/placeimg_800_600_tech.jpg){#fig-001 width=70%}
 
 # Выводы
 

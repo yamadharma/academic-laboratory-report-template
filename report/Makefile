@@ -1,5 +1,5 @@
-FILES = $(patsubst %.md, %.docx, $(wildcard *.md))
-FILES += $(patsubst %.md, %.pdf, $(wildcard *.md))
+FILES = $(patsubst %.qmd, %.docx, $(wildcard *.qmd))
+FILES += $(patsubst %.qmd, %.pdf, $(wildcard *.qmd))
 
 FILTERS =
 OPTIONS =
@@ -28,8 +28,13 @@ PDF_BIB_OPTIONS = --citeproc
 %.pdf: %.md
 	-@pandoc "$<" $(FILTERS) $(PDF_ENGINE) $(PDF_OPTIONS) $(PDF_BIB_OPTIONS) $(FORMAT_OPTIONS) $(OPTIONS) -o "$@"
 
-all: $(FILES)
+%.docx: %.qmd
+	-@quarto render "$<" --to docx
 
+%.pdf: %.qmd
+	-@quarto render "$<" --to pdf
+
+all: $(FILES)
 
 clean:
 	-rm $(FILES) *~
