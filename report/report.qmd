@@ -20,20 +20,45 @@ license: "CC BY"
 ## Generic otions
 lang: ru-RU
 toc-title: "Содержание"
+number-sections: true
 
 ## Bibliography
 bibliography: bib/cite.bib
 csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
 
 ## Pdf output format
-toc: true # Table of contents
-toc-depth: 2
-lof: true # List of figures
-lot: true # List of tables
-fontsize: 12pt
-linestretch: 1.5
-papersize: a4
-documentclass: scrreprt
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: false
+    toc-depth: 2
+    lof: true # List of figures
+    lot: true # List of tables
+    papersize: a4
+    documentclass: scrreprt
+    fontsize: 12pt
+    linestretch: 1.5
+    ## Fonts
+    mainfont: IBM Plex Serif
+    romanfont: IBM Plex Serif
+    sansfont: IBM Plex Sans
+    monofont: IBM Plex Mono
+    mathfont: STIX Two Math
+    mainfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
+    romanfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
+    sansfontoptions: Ligatures=Common,Ligatures=TeX,Scale=MatchLowercase,Scale=0.94
+    monofontoptions: Scale=MatchLowercase,Scale=0.94,FakeStretch=0.9
+    ## Biblatex
+    cite-method: biblatex
+    biblio-style: "gost-numeric"
+    biblatexoptions:
+      - parentracker=true
+      - backend=biber
+      - hyperref=auto
+      - language=auto
+      # - autolang=other*
+      - citestyle=gost-numeric
 ## I18n polyglossia
 polyglossia-lang:
   name: russian
@@ -45,34 +70,25 @@ polyglossia-otherlangs:
 ## I18n babel
 babel-lang: russian
 babel-otherlangs: english
-## Fonts
-mainfont: IBM Plex Serif
-romanfont: IBM Plex Serif
-sansfont: IBM Plex Sans
-monofont: IBM Plex Mono
-mathfont: STIX Two Math
-mainfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
-romanfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
-sansfontoptions: Ligatures=Common,Ligatures=TeX,Scale=MatchLowercase,Scale=0.94
-monofontoptions: Scale=MatchLowercase,Scale=0.94,FakeStretch=0.9
 # mathfontoptions:
 ## Biblatex
-biblatex: true
-biblio-style: "gost-numeric"
-biblatexoptions:
-  - parentracker=true
-  - backend=biber
-  - hyperref=auto
-  - language=auto
-  - autolang=other*
-  - citestyle=gost-numeric
-## Pandoc-crossref LaTeX customization
+# biblatex: true
+# biblio-style: "gost-numeric"
+# biblatexoptions:
+#   - parentracker=true
+#   - backend=biber
+#   - hyperref=auto
+#   - language=auto
+#   - autolang=other*
+#   - citestyle=gost-numeric
+## Crossref customization
+crossref:
+  lof-title: "Список иллюстраций"
+  lot-title: "Список таблиц"
+  lol-title: "Листинги"
 # figureTitle: "Рис."
 # tableTitle: "Таблица"
 # listingTitle: "Листинг"
-# lofTitle: "Список иллюстраций"
-# lotTitle: "Список таблиц"
-# lolTitle: "Листинги"
 ## Misc options
 indent: true
 header-includes:
