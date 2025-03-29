@@ -1,3 +1,21 @@
+# [2.0.0](https://github.com/yamadharma/academic-laboratory-report-template/compare/v1.0.5...v2.0.0) (2025-03-29)
+
+
+### Bug Fixes
+
+* **main:** fix file structure ([f8cf1f2](https://github.com/yamadharma/academic-laboratory-report-template/commit/f8cf1f2b87fb7145c06163d0009750d4b9efaa18))
+* **report:** fix biblatex options ([82d1c7e](https://github.com/yamadharma/academic-laboratory-report-template/commit/82d1c7edcfad3973bc6c4e2a1b87f4e9ec651380))
+* **report:** update yaml preamble ([e5b6bd8](https://github.com/yamadharma/academic-laboratory-report-template/commit/e5b6bd803a9c46d8fb3ca91f526895becbf4be7f))
+
+
+### Features
+
+* **report:** add author and affilation ([64a3675](https://github.com/yamadharma/academic-laboratory-report-template/commit/64a3675af31d42703b2cdb7dcc217a8312b5e8a0))
+* **report:** add pdf options ([afc8946](https://github.com/yamadharma/academic-laboratory-report-template/commit/afc894638b41a5bdc92a22243266a241ce2f9272))
+* **report:** switch to Quarto ([b6b59c9](https://github.com/yamadharma/academic-laboratory-report-template/commit/b6b59c9c4bb2bf9fbfcea8663a0b93124be5caaf))
+
+
+
 ## [1.0.5](https://github.com/yamadharma/academic-laboratory-report-template/compare/v1.0.4...v1.0.5) (2024-08-31)
 
 
