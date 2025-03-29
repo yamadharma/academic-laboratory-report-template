@@ -65,14 +65,14 @@ format:
     cite-method: biblatex
     biblio-style: gost-numeric
     biblatexoptions:
-      - parentracker=true
       - backend=biber
-      - hyperref=auto
       - langhook=extras
-      - language=auto
       - autolang=other*
-      - clearlang=true
-      - citestyle=gost-numeric
+      # - parentracker=true
+      # - hyperref=auto
+      # - language=auto
+      # - clearlang=true
+      # - citestyle=gost-numeric
 ### Misc options
     csquotes: true
     indent: true
