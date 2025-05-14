@@ -1,3 +1,12 @@
+## [2.0.1](https://github.com/yamadharma/academic-laboratory-report-template/compare/v2.0.0...v2.0.1) (2025-05-14)
+
+
+### Features
+
+* **report:** add project file ([34680b2](https://github.com/yamadharma/academic-laboratory-report-template/commit/34680b24ba70cf61f0f8def4ce37c40e7e500189))
+
+
+
 # [2.0.0](https://github.com/yamadharma/academic-laboratory-report-template/compare/v1.0.5...v2.0.0) (2025-03-29)
 
 
