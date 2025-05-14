@@ -2,7 +2,6 @@
 # Preamble
 
 ## Author
-
 author:
   name: Дмитрий Сергеевич Кулябов
   degrees: DSc
@@ -14,28 +13,27 @@ author:
       postal-code: 117198
       city: Москва
       address: ул. Миклухо-Маклая, д. 6
-
 ## Title
-
 title: "Шаблон отчёта по лабораторной работе"
 subtitle: "Простейший вариант"
 license: "CC BY"
-
 ## Generic options
-
 lang: ru-RU
 number-sections: true
 toc: true
 toc-title: "Содержание"
 toc-depth: 2
-
+## Crossref customization
+crossref:
+  lof-title: "Список иллюстраций"
+  lot-title: "Список таблиц"
+  lol-title: "Листинги"
 ## Bibliography
-
-bibliography: bib/cite.bib
-csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
-
-## Pdf output format
+bibliography:
+  - bib/cite.bib
+csl: _resources/csl/gost-r-7-0-5-2008-numeric.csl
 format:
+## Pdf output format
   pdf:
     toc: true
     number-sections: true
@@ -51,16 +49,6 @@ format:
 ### Language
     babel-lang: russian
     babel-otherlangs: english
-### Fonts
-    mainfont: IBM Plex Serif
-    romanfont: IBM Plex Serif
-    sansfont: IBM Plex Sans
-    monofont: IBM Plex Mono
-    mathfont: STIX Two Math
-    mainfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
-    romanfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
-    sansfontoptions: Ligatures=Common,Ligatures=TeX,Scale=MatchLowercase,Scale=0.94
-    monofontoptions: Scale=MatchLowercase,Scale=0.94,FakeStretch=0.9
 ### Biblatex
     cite-method: biblatex
     biblio-style: gost-numeric
@@ -68,11 +56,6 @@ format:
       - backend=biber
       - langhook=extras
       - autolang=other*
-      # - parentracker=true
-      # - hyperref=auto
-      # - language=auto
-      # - clearlang=true
-      # - citestyle=gost-numeric
 ### Misc options
     csquotes: true
     indent: true
@@ -80,16 +63,12 @@ format:
       \usepackage{indentfirst}
       \usepackage{float}
       \floatplacement{figure}{H}
-
-## Crossref customization
-
-crossref:
-  lof-title: "Список иллюстраций"
-  lot-title: "Список таблиц"
-  lol-title: "Листинги"
-# figureTitle: "Рис."
-# tableTitle: "Таблица"
-# listingTitle: "Листинг"
+      \usepackage[math,RM={Scale=0.94},SS={Scale=0.94},SScon={Scale=0.94},TT={Scale=MatchLowercase,FakeStretch=0.9},DefaultFeatures={Ligatures=Common}]{plex-otf}
+## Docx output format
+  docx:
+    toc: true
+    number-sections: true
+    toc-depth: 2
 ---
 
 # Цель работы
@@ -127,7 +106,7 @@ crossref:
 
 Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию ([рис. @fig-001]).
 
-![Название рисунка](image/placeimg_800_600_tech.jpg){#fig-001 width=70%}
+![V Сольвеевский конгресс (1927) «Электроны и фотоны»](image/solvay.jpg){#fig-001 width=70%}
 
 # Выводы
 
