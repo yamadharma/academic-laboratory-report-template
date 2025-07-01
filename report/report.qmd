@@ -32,8 +32,9 @@ crossref:
 bibliography:
   - bib/cite.bib
 csl: _resources/csl/gost-r-7-0-5-2008-numeric.csl
+## Formats
 format:
-## Pdf output format
+### Pdf output format
   pdf:
     toc: true
     number-sections: true
@@ -41,22 +42,22 @@ format:
     toc-depth: 2
     lof: true # List of figures
     lot: true # List of tables
-### Document
+#### Document
     documentclass: scrreprt
     papersize: a4
     fontsize: 12pt
     linestretch: 1.5
-### Language
+#### Language
     babel-lang: russian
     babel-otherlangs: english
-### Biblatex
+#### Biblatex
     cite-method: biblatex
     biblio-style: gost-numeric
     biblatexoptions:
       - backend=biber
       - langhook=extras
       - autolang=other*
-### Misc options
+#### Misc options
     csquotes: true
     indent: true
     header-includes: |
@@ -64,7 +65,7 @@ format:
       \usepackage{float}
       \floatplacement{figure}{H}
       \usepackage[math,RM={Scale=0.94},SS={Scale=0.94},SScon={Scale=0.94},TT={Scale=MatchLowercase,FakeStretch=0.9},DefaultFeatures={Ligatures=Common}]{plex-otf}
-## Docx output format
+### Docx output format
   docx:
     toc: true
     number-sections: true
