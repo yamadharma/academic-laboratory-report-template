@@ -1,3 +1,12 @@
+## [2.0.2](https://github.com/yamadharma/academic-laboratory-report-template/compare/v2.0.1...v2.0.2) (2025-07-01)
+
+
+### Bug Fixes
+
+* **gitignore:** ignore report output ([1d4fcb5](https://github.com/yamadharma/academic-laboratory-report-template/commit/1d4fcb5c4e60ad5f12ad8320e0589a42952e8a4a))
+
+
+
 ## [2.0.1](https://github.com/yamadharma/academic-laboratory-report-template/compare/v2.0.0...v2.0.1) (2025-05-14)
 
 
