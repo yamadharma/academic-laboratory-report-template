@@ -1,3 +1,12 @@
+# [2.1.0](https://github.com/yamadharma/academic-laboratory-report-template/compare/v2.0.2...v2.1.0) (2025-09-06)
+
+
+### Bug Fixes
+
+* **quarto:** fix compatiblity with tinytex ([c607514](https://github.com/yamadharma/academic-laboratory-report-template/commit/c607514c96e3c43abd4805b96e409f33e464825a))
+
+
+
 ## [2.0.2](https://github.com/yamadharma/academic-laboratory-report-template/compare/v2.0.1...v2.0.2) (2025-07-01)
 
 
