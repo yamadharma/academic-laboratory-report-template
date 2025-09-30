@@ -48,12 +48,8 @@ format:
 #### Misc options
     csquotes: true
     indent: true
-    header-includes: |
-      \usepackage{indentfirst}
-      \usepackage{float}
-      \floatplacement{figure}{H}
-      \usepackage{libertine}
-    # \usepackage[math,RM={Scale=0.94},SS={Scale=0.94},SScon={Scale=0.94},TT={Scale=MatchLowercase,FakeStretch=0.9},DefaultFeatures={Ligatures=Common}]{plex-otf}
+    include-in-header:
+      - file: _assets/preamble.tex
 ### Docx output format
   docx:
     toc: true
