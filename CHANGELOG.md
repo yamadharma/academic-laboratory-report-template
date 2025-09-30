@@ -1,3 +1,13 @@
+# [2.2.0](https://github.com/yamadharma/academic-laboratory-report-template/compare/v2.1.0...v2.2.0) (2025-09-30)
+
+
+### Features
+
+* **quarto:** load different packages depending on texlive ([060a044](https://github.com/yamadharma/academic-laboratory-report-template/commit/060a044832aeb6adc93fa0c1d951791ab2d51f62))
+* **quarto:** switch to xelatex ([25d8483](https://github.com/yamadharma/academic-laboratory-report-template/commit/25d8483b39a2440d0463c185d055c233b5bc630f))
+
+
+
 # [2.1.0](https://github.com/yamadharma/academic-laboratory-report-template/compare/v2.0.2...v2.1.0) (2025-09-06)
 
 
