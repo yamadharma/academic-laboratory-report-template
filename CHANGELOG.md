@@ -1,3 +1,12 @@
+## [2.2.1](https://github.com/yamadharma/academic-laboratory-report-template/compare/v2.2.0...v2.2.1) (2025-10-16)
+
+
+### Bug Fixes
+
+* **style:** fix loading old plex-otf ([a4f2dd1](https://github.com/yamadharma/academic-laboratory-report-template/commit/a4f2dd1b92502379ea11269074626e2143efa771))
+
+
+
 # [2.2.0](https://github.com/yamadharma/academic-laboratory-report-template/compare/v2.1.0...v2.2.0) (2025-09-30)
 
 
