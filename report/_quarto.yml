@@ -5,6 +5,11 @@ project:
 standalone: true
 self-contained: true
 
+## Julia support
+# engine: julia
+# julia:
+#   exeflags: ["--project=../project"]
+
 ## Generic options
 lang: ru-RU
 number-sections: true
@@ -22,37 +27,40 @@ bibliography:
 csl: _resources/csl/gost-r-7-0-5-2008-numeric.csl
 ## Formats
 format:
-### Pdf output format
+  ### Docx output format
+  docx:
+    toc: true
+    number-sections: true
+    toc-depth: 2
+  ### Pdf output format
   pdf:
-    pdf-engine: xelatex
+    # pdf-engine: xelatex
+    ### minted support
+    # filters:
+    #   - minted-quarto
     toc: true
     number-sections: true
     colorlinks: false
     toc-depth: 2
     lof: true # List of figures
     lot: true # List of tables
-#### Document
+    #### Document
     documentclass: scrreprt
     papersize: a4
     fontsize: 12pt
     linestretch: 1.5
-#### Language
+    #### Language
     babel-lang: russian
     babel-otherlangs: english
-#### Biblatex
+    #### Biblatex
     cite-method: biblatex
-    # biblio-style: gost-numeric
+    biblio-style: gost-numeric
     biblatexoptions:
       - backend=biber
       - langhook=extras
       - autolang=other*
-#### Misc options
+    #### Misc options
     csquotes: true
     indent: true
     include-in-header:
-      - file: _assets/preamble.tex
-### Docx output format
-  docx:
-    toc: true
-    number-sections: true
-    toc-depth: 2
+      - file: _resources/tex/preamble.tex
