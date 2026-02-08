@@ -1,0 +1,7 @@
+title: Minted-quarto
+author: Dmitry S. Kulyabov
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  filters:
+    - minted-quarto.lua
