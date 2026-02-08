@@ -1,3 +1,18 @@
+## [2.2.2](https://github.com/yamadharma/academic-laboratory-report-template/compare/v2.2.1...v2.2.2) (2026-02-08)
+
+
+### Bug Fixes
+
+* **resources:** update csl ([3edd2c9](https://github.com/yamadharma/academic-laboratory-report-template/commit/3edd2c9c327fda0a5fa1e9bd341fd5245b1faa97))
+* **resourses:** move default.tex ([9c0e6f8](https://github.com/yamadharma/academic-laboratory-report-template/commit/9c0e6f8ad97a265f134dc3839e6c6606c8bd54e3))
+
+
+### Features
+
+* **quarto:** add support minted ([377114a](https://github.com/yamadharma/academic-laboratory-report-template/commit/377114a40c6eb600f0bb1e01300a6793eb4f3449))
+
+
+
 ## [2.2.1](https://github.com/yamadharma/academic-laboratory-report-template/compare/v2.2.0...v2.2.1) (2025-10-16)
 
 
