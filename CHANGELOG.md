@@ -1,3 +1,9 @@
+# [2.3.0](https://github.com/yamadharma/academic-laboratory-report-template/compare/v2.2.2...v2.3.0) (2026-09-06)
+
+### Features
+
+* **report:** extend report text ([3acaf6e](https://github.com/yamadharma/academic-laboratory-report-template/commit/3acaf6e410b4d9d477c4121e9ac07eb4352a34f1))
+
 ## [2.2.2](https://github.com/yamadharma/academic-laboratory-report-template/compare/v2.2.1...v2.2.2) (2026-02-08)
 
 
